@@ -55,8 +55,8 @@ public class Main {
 		        } while (opcao != 4);
 	    	 
 		        lerDados.close();
-		    }catch(InputMismatchException e) {
-		    	System.out.println("Digite apenas valores permitidos, por favor!");
-		    }
+		}catch(InputMismatchException e) {
+		    System.out.println("Digite apenas valores permitidos, por favor!");
+		}
 	}
 }
