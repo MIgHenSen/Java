@@ -1,3 +1,2 @@
 # Java
-Para quem descobrir esses códigos, passe adiante para os iniciantes na área. 
-Esses sã
+Abstracao1 e 2, Agregação 1 e 2, av cilindro esfera, arraylist 1 e 2, composição, herança 1 e 2, operacoes basicas, projeto java 
