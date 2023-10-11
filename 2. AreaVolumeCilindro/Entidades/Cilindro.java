@@ -7,14 +7,14 @@ public class Cilindro {
 	private float raio;
 	private float altura;
 	
-/* Construtor, que torna obrigatorio as informacoes para referenciar esse objeto */
+/* Construtor */
 	public Cilindro() {
 		this.raio = raio;
 		this.altura = altura;
 	}
 	
 //Metodos
-	//Em java, para alguns c·lculos, usamos a biblioteca Math 
+	//Em java, para alguns c√°lculos, usamos a biblioteca Math 
 	public float exibirArea(float raio, float altura) {
 		float area;
 		area = (float) (raio*Math.PI*2)*(raio+altura);
