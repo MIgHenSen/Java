@@ -1,5 +1,7 @@
 package Principal;
 
+/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
+ * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import Entidades.Endereço;
