@@ -1,11 +1,6 @@
 package Entidades;
-
-/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
- * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.ArrayList;
 
-/* Um ArrayList e uma claase generica para colecoes, podendo guardar
- * colecoes de quaisquer tipo de dados */
 public class ListaTarefas {
 	private ArrayList<Tarefa> listaTarefas;
 	
@@ -16,8 +11,6 @@ public class ListaTarefas {
 	
 //Metodos
 	public void adicionarTarefa(Tarefa tarefa) {
-		/* add e o metodo de ArrayList que adiciona 
-		 * objetos a colecao */ 
 		listaTarefas.add(tarefa);
 	}
 	
@@ -33,8 +26,6 @@ public class ListaTarefas {
 	
 	public void removerTarefa(int indice) {
 		if ((indice >= 0) && (indice < listaTarefas.size() )) {
-			/* remove e o metodo de ArrayList que deleta 
-			 * objetos da colecao */
 			Tarefa tarefa = listaTarefas.remove(indice);
 			System.out.println("Tarefa" + tarefa.getNome() + "removida!");
 		} else {
@@ -43,8 +34,6 @@ public class ListaTarefas {
 	}
 	
 	public void listaTarefas() {
-		/* isEmpty e um metodo de ArrayList que verifica se a 
-		 * lista esta vazia */
 		if (listaTarefas.isEmpty()) {
 			System.out.println("Não há tarefas!");
 		} else {
