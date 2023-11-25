@@ -1,7 +1,4 @@
 package Principal;
-
-/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
- * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import Entidades.Eletronicos;
@@ -10,27 +7,16 @@ import Entidades.Vestuario;
 
 public class Main {
 	public static void main(String[] args){
-		// Declaracao de variaveis de tipo inteiro
 		int escolha = 0, codIdent, preco;
-		// Declaracao de variavel de tipo float, decimal
 		float imposto;
-		// Declaracao de variavel de tipo string(conjunto de caracteres)
 		String nome;
-		// Declaracao de scanner, para que o codigo leia o que o usuario digitar
 		Scanner lerdados = new Scanner(System.in);
-		// Objeto criado para chamada de metodos
 		Livros livro = new Livros();
-		// Objeto criado para chamada de metodos
 		Eletronicos eletro = new Eletronicos();
-		// Objeto criado para chamada de metodos
 		Vestuario roup = new Vestuario();
 		
-		// Do/while, uma clausula de repeticao
 		do {
-			/* As clausulas try/catch garantem o tratamento de excecoes, codigos 
-			 * que nao sao totalmente atendidos e geram algum erro */
 			try {
-				// Menu de opcoes para o usuario
 				System.out.println("O que deseja comprar: ");
 				System.out.println("1 - Livros");
 				System.out.println("2 - Eletronicos");
@@ -38,8 +24,6 @@ public class Main {
 				System.out.println("4 - Finalizar Programa");
 				escolha = lerdados.nextInt();
 				
-				/* Switch/case é uma estrutura de condição que define o código a ser 
-				 * executado com base em uma comparação de valores*/
 				switch(escolha) {
 				case 1:
 					System.out.println("Qual o nome do livro: ");
@@ -98,7 +82,6 @@ public class Main {
 					System.out.println("Um teste ou uma brincadeira?");
 				}
 				
-			// Tratamento de excecoes
 			/* InputMismatchException indiga que um elemento solicitado nao existe, 
 			* ou seja, o usuario digitou algo que nao deveria */
 			}catch (InputMismatchException e) {
