@@ -1,7 +1,4 @@
 package Principal;
-
-/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
- * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import Entidades.Colaborador;
@@ -9,20 +6,13 @@ import Entidades.Departamento;
 
 public class Main {
 	public static void main(String[] args){
-		// Declaracao de variaveis de tipo string (conjunto de caracteres)
 		String nomeC = null, funcao = null, dept = null, sigident = null;
-		// Declaracao de variaveis de tipo inteiro
 		int idade = 0, identificacao = 0, numColab = 0;
 		
-		// Declaracao de scanner, para que o codigo leia o que o usuario digitar
 		Scanner lerdados = new Scanner(System.in);
-		// Objeto criado para chamada de metodos
 		Colaborador colab_1 = new Colaborador();
-		// Objeto criado para chamada de metodos
 		Departamento dept_1 = new Departamento();
 		
-		/* As clausulas try/catch garantem o tratamento de excecoes, codigos 
-		 * que nao sao totalmente atendidos e geram algum erro */
 		try {
 			System.out.println("Qual o nome do colborador: ");
 			nomeC = lerdados.next();
@@ -49,7 +39,6 @@ public class Main {
 			
 			System.out.println(dept_1.setSiglaIdent(sigident));
 			
-		// Tratamento de excecoes
 		/* InputMismatchException indica que um elemento solicitado nao existe, 
 		* ou seja, o usuario digitou algo que nao deveria */
 		}catch (InputMismatchException e) {
