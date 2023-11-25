@@ -6,7 +6,7 @@ package entidades;
 public class Alunos extends Pessoa{
 	private String nomeCurso;
 	
-	/* Construtor que obriga informacoes para referenciar objeto */
+	/* Construtor */
 		public Alunos(String nome, int idade, String nomeCurso) {
 			super(nome, idade);
 			this.nomeCurso = nomeCurso;
