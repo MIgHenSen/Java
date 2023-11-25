@@ -8,7 +8,7 @@ public class Produto {
 	 private double preco;
 	 private int quantidade;
 	 
-/* Construtor que obriga informacoes para referenciar objeto */
+/* Construtor */
 	 public Produto(String nome, double preco, int quantidade) {
 		 this.nome = nome;
 		 this.preco = preco;
