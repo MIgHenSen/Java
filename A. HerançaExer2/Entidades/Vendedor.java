@@ -6,7 +6,7 @@ package Entidades;
 public class Vendedor extends Funcionario{
 	private float vendas;
     
-/* Construtor que obriga informacoes para referenciar objeto */
+/* Construtor */
     public Vendedor(String nome, String rg, float salario, float vendas) {
         super(rg, rg, vendas);
         this.vendas = vendas;
