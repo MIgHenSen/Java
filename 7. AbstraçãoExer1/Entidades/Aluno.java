@@ -12,8 +12,6 @@ public class Aluno extends Pessoa{
 	}
 
 //Metodos - Sets
-	
-	/* Override mostra que é uma subescrita de metodo */
 	@Override
 	public String toString(String nome, int idade) {
 		return "Nome: " +nome+ "; Idade: " +idade+ "; Identifica��o: " +identificacao;
