@@ -1,28 +1,17 @@
 package Principal;
-
-/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
- * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import Entidades.Operacoes;
 
 public class Main {
 	public static void main(String[] args) {
-		// Declaracao de variaveis do tipo float, decimais
 		float adicao, subtracao, divisao, multiplicacao, raiz, potencia, number, numero;
-		// Variavel auxiliar
 		int escolha;
-		// Declaracao de scanner, para que o codigo leia o que o usuario digitar
 		Scanner lerdados = new Scanner(System.in);
-		// Objeto criado para chamada de metodos
 		Operacoes contas = new Operacoes();
 		
-		/* As clausulas try/catch garantem o tratamento de excecoes, codigos 
-		 * que nao sao totalmente atendidos e geram algum erro */
 		try {
-			// Do/while, uma clausula de repeticao
 			do {
-				// Menu de opcoes para o usuario
 				System.out.println("O que quer fazer: ");
 				System.out.println("1 - Adicao");
 				System.out.println("2 - Subtracao");
@@ -33,8 +22,6 @@ public class Main {
 				System.out.println("7 - Finalisar programa");
 				escolha = lerdados.nextInt();
 				
-				/* Switch/case é uma estrutura de condição que define o código a ser 
-				 * executado com base em uma comparação de valores*/
 				switch(escolha) {
 				case 1:
 					System.out.println("Digite os numeros para somar: ");
@@ -82,11 +69,11 @@ public class Main {
 					System.out.println("Bom trabalho!");
 				}
 			}while (escolha!=7);
-		// Tratamento de excecoes
+			
 		/* InputMismatchException indica que um elemento solicitado nao existe, 
 		* ou seja, o usuario digitou algo que nao deveria */
 		}catch(InputMismatchException e) {
-			System.out.println("Digite apenas valores vÃ¡lidos, por favor!");
+			System.out.println("Digite apenas valores vÃƒÂ¡lidos, por favor!");
 		}
 	}
 }
