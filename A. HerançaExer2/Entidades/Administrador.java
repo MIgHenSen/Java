@@ -6,14 +6,13 @@ package Entidades;
 public class Administrador extends Funcionario{
 	private int horasExtras;
 	
-/* Construtor que obriga informacoes para referenciar objeto */
+/* Construtor */
 	public Administrador(String nome, String rg, float salario) {
 		super(nome, rg, salario);
 		horasExtras = 0;
 	}
 	
 //Metodos
-	/* Override mostra que é uma subescrita de metodo */
 	 @Override
 	    public float calcularHolerite() {
 	        float salarioTotal = super.calcularHolerite();
