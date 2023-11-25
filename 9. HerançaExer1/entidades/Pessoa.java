@@ -7,7 +7,7 @@ public class Pessoa {
 	protected String nome;
 	protected int idade;
 	
-/* Construtor que obriga informacoes para referenciar objeto */
+/* Construtor */
 	public Pessoa(String nome, int idade) {
 		this.nome = nome;
 		this.idade = idade;
