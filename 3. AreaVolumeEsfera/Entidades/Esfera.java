@@ -12,7 +12,6 @@ public class Esfera {
 	}
 	
 //Metodos
-	// Uso da biblioteca Math para algumas operacoes
 	public float getArea(float raio) {
 		float area;
 		area = (float) (raio*4*Math.PI);
