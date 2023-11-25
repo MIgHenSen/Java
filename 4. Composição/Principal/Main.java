@@ -1,7 +1,4 @@
 package Principal;
-
-/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
- * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import Entidades.Automovel;
@@ -10,22 +7,14 @@ import Entidades.Pneu;
 
 public class Main {
 	public static void main(String[] args) {
-		// Declaracao de variaveis de tipo string (conjunto de caracteres)
 		String marca = null, marcaPneus = null;
-		// Declaracao de variaveis de tipo float, decimais
 		float kilometragem = 0, potencia = 0, quantCombustivel = 0, pressaoAr = 0;
 		
-		// Declaracao de scanner, para que o codigo leia o que o usuario digitar
 		Scanner lerdados = new Scanner(System.in);
-		// Objeto criado para chamada de metodos
 		Motor motor_1 = new Motor();
-		// Objeto criado para chamada de metodos
 		Pneu pneu_1 = new Pneu();
-		// Objeto criado para chamada de metodos
 		Automovel veiculo_1 = new Automovel();
 		
-		/* As clausulas try/catch garantem o tratamento de excecoes, codigos 
-		 * que nao sao totalmente atendidos e geram algum erro */
 		try {
 			System.out.println("Digite a marca do veiculo: ");
 			marca = lerdados.next();
@@ -53,7 +42,6 @@ public class Main {
 			System.out.println("Sobre os pneus: ");
 			System.out.println(pneu_1.getDados());
 			
-		// Tratamento de excecoes
 		/* InputMismatchException indica que um elemento solicitado nao existe, 
 		* ou seja, o usuario digitou algo que nao deveria */
 		}catch(InputMismatchException e) {
