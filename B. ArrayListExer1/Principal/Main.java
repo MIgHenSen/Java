@@ -1,16 +1,10 @@
 package Principal;
-
-/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
- * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import Entidades.CarrinhoDeCompras;
 import Entidades.Produto;
 
 public class Main {
-	/* Assim como metodos sao criados em outras classes e apenas chamados
-	 * na main atraves dos objetod, pode-se fazer o mesmo na main, separar 
-	 * algumas partes do codigo principal e apenas chama-lo mais tarde */
 	public static void exibirMenu() {
         System.out.println("\n===== MENU =====");
         System.out.println("1 - Adicionar produto");
@@ -21,23 +15,15 @@ public class Main {
     } 
 	
 	public static void main(String[] args) {
-		// Declaracao de scanner, para que o codigo leia o que o usuario digitar
 		Scanner lerDados = new Scanner(System.in);
-		// Objeto criado para chamada de metodos
-	    CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
-	    // Variavel auxiliar
-	    int opcao;
+	    	CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+	    	int opcao;
 
-	    /* As clausulas try/catch garantem o tratamento de excecoes, codigos 
-		 * que nao sao totalmente atendidos e geram algum erro */
 	     try {
-	    	// Do/while, uma clausula de repeticao
 	    	 do {
 		            exibirMenu();
 		            opcao = lerDados.nextInt();
 		            
-		            /* Switch/case é uma estrutura de condição que define o código a ser 
-					 * executado com base em uma comparação de valores*/
 		            switch (opcao) {
 		                case 1:
 		                    System.out.print("Digite o nome do produto: ");
@@ -70,7 +56,6 @@ public class Main {
 	    	 
 		        lerDados.close();
 		        
-		// Tratamento de excecoes
 		/* InputMismatchException indiga que um elemento solicitado nao existe, 
 		* ou seja, o usuario digitou algo que nao deveria */
 		}catch(InputMismatchException e) {
