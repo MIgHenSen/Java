@@ -12,7 +12,6 @@ public class Eletronicos extends Itens{
 	}
 	
 //Metodos
-	/* Override mostra que é uma subescrita de metodo */
 	@Override
 	public String tostring(int identificacao, String nome, int preco, float imposto) {
 		return "Identifica��o: " +identificacao+ "; Nome: " +nome+ "; Pre�o: " +preco+ "; Imposto: " +imposto;
