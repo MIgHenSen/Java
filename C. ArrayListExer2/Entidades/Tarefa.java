@@ -8,7 +8,7 @@ public class Tarefa {
 	private String descricao;
 	private boolean concluida;
 	
-/* Construtor que obriga informacoes para referenciar objeto */
+/* Construtor */
 	public Tarefa(String nome, String descricao) {
 		this.nome = nome;
 		this.descricao = descricao;
