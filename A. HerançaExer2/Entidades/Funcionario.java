@@ -8,7 +8,7 @@ public class Funcionario {
     private String rg;
     private float salario;
     
-/* Construtor que obriga informacoes para referenciar objeto */
+/* Construtor */
     public Funcionario(String nome, String rg, float salario) {
         nome = nome;
         rg = rg;
