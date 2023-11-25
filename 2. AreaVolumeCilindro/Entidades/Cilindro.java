@@ -14,7 +14,6 @@ public class Cilindro {
 	}
 	
 //Metodos
-	//Em java, para alguns cálculos, usamos a biblioteca Math 
 	public float exibirArea(float raio, float altura) {
 		float area;
 		area = (float) (raio*Math.PI*2)*(raio+altura);
