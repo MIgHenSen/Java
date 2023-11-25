@@ -1,18 +1,10 @@
 package Principal;
-
-/* Biblioteca (library) é uma coleção de subprogramas, que contem dados
- * auxiliares. Chamamos essas bibliotecas através dos imports */
 import java.util.Scanner;
 import Entidades.ListaTarefas;
 import Entidades.Tarefa;
 
 public class Main {
-	/* Assim como metodos sao criados em outras classes e apenas chamados
-	 * na main atraves dos objetod, pode-se fazer o mesmo na main, separar 
-	 * algumas partes do codigo principal e apenas chama-lo mais tarde */
 	public static void menu(Scanner lerdados, int opcao, ListaTarefas tarefas) {
-		/* Switch/case é uma estrutura de condição que define o código a ser 
-		 * executado com base em uma comparação de valores*/
 		switch(opcao) {
 		case 1:
 			System.out.println("Nome da tarefa:");
@@ -49,14 +41,10 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		// Declaracao de scanner, para que o codigo leia o que o usuario digitar
 		Scanner lerdados = new Scanner(System.in);
-		// Objeto criado para chamada de metodos
 		ListaTarefas tarefas = new ListaTarefas();
-		// Variavel auxiliar
 		int opcao;
 		
-		// Do/while, uma clausula de repeticao
 		do {
 			System.out.println("O que deseja fazer?");
 			System.out.println("1 - Adicionar tarefa");
